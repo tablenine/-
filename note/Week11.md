@@ -11,4 +11,4 @@
   + 각각의 base classifier는 35%의 에러를 발생한다고 가정
   + 각각의 모든 classifier가 전부 다 똑같은 identical 한 classifier라면 35%의 에러를 발생시킬 것
   + 만약 각각의 classfier가 같지 않고 **독립적**이며 서로 idependently 성장을 해서 모델이 생성 되었다면 그리고 각각의 error들이 코릴레이션이 없고 independent 하다면 error rate를 계산할 수 있는 공식이 있음
-  + 6%의 error확률로 변환 됨
+  + error 발생 확률이 6%로 감소함

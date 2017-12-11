@@ -33,6 +33,15 @@
 
 #### 12-1-3 Multi-Layer Perceptron
 
-
++ Back-Propagation
+  + Input 튜플이 주어짐
+  + 네트워크를 통해서 output을 구할수 있음
+  + 에러를 계산
+  + 에러를 최소화 하기위해 weight를 수정
+  + 반복
++ Multiclass-Classification(다중 클래스 분류)을 Neural Network로 구성을 하여 학습시키고자 함
+  + 각 하나의 클래스 마다 하나의 Output Node를 할당
+  + 가장 최고의 값이 나온 Output node를 분류함
+  + Confidence : 가장 높은 값과 두번째높은 값의 차이
 
 

@@ -42,7 +42,8 @@
 + Multiclass-Classification(다중 클래스 분류)을 Neural Network로 구성을 하여 학습시키고자 함
   + 각 하나의 클래스 마다 하나의 Output Node를 할당
   + 가장 최고의 값이 나온 Output node를 분류함
-  + Confidence : 가장 높은 값과 두번째높은 값의 차이
+  + Confidence : 가장 높은 값과 두번째높은 값의 차이  
++ 일반적으로 나쁜해석 능력을 가짐
 
 
 ### 12-2 Support Vector Machine I

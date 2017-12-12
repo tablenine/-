@@ -45,3 +45,43 @@
   + Confidence : 가장 높은 값과 두번째높은 값의 차이
 
 
+### 12-2 Support Vector Machine I
+
+#### 12-2-1 SVM vs. ANN
+
++ SVM 
+  + 90년대 후반부터 2010년대 까지 많이 쓰임
+  + 이후는 딥러닝이 더 떠오르면서 딥러닝을 많이 사용
+  + SVM 모델은 ANN과 비교하여 튜닝 할 수있는 더 적은 하이퍼 파라미터를 필요로함
+  + 딥러닝은 ANN을 확장한것
+  + 지금도 정형데이터, 구조화 된 데이터는 많이 사용하고 있음
+  + Deterministic한 알고리즘
+  + Nonlinear 함수도 커널 트릭이라는 트릭에 의해서 Deterministic. 하게 구하는 방법론
+
+#### 12-2-2 Linear Support Vector Machine
+
++ Margin의 크기로 표현 (margin이 클수록 좋은 함수)
+  + Margin은 Boundary함수와 가장 가까운 데이터 간의 직각 거리(Orthgonal Distance)
++ Linearly separable 
+  + 모든 데이터에 대해서 임의의 Quality( y(b+WX) > 0 )가 0보다 크게 만드는 w와 b가 존재한다면 Linearly separable하다고 한다
+
+#### 12-2-3 Primal / Dual Problem
+
++ Primal form에서 Dual form으로 변환해서 풀이
+  + Linear primal form 상태에서는 Nonlinear classification을 할 수 없기때문
++ Dual form
+  + w대신 알파를 Optimize해야함
+  + 알파를 Optimize 한 후 아래 공식으로 w를 계산
+  + w = 시그마a<sub>i</sub>y<sub>i</sub>x<sub>i</sub>
+
+#### 12-2-4 Characteristics of SVM
+
++ 많은 알파들이 0이 됨
++ 0이 아닌 알파들을 support vectors(SV)라고 부름
++ SVM model
+  + bias b, SV와 그에 해당하는 Coefficient 알파의 리스트로 표현이 됨
+  + C의 값이 클경우 에러를 줄이기 위해 노력하여 답이 나오지 않음
+  + C의 값이 0일경우 에러를 줄이기 위해 노력하지 않아 아무답이나 출력함
+  + 적당한 C값이 필요 -> 0부터 조금씩 늘려가면서 튜닝
+  + w를 먼저 계산하지 않는 이유는 Nonlinear kernel trick을 쓰기위해서
+

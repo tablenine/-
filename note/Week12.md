@@ -79,6 +79,7 @@
 
 + 많은 알파들이 0이 됨
 + 0이 아닌 알파들을 support vectors(SV)라고 부름
++ SVM에서 최적의 가중치 벡터 w는 support와 vector의 가중 합으로 표현됩니다.
 + SVM model
   + bias b, SV와 그에 해당하는 coefficient 알파의 리스트로 표현이 됨
   + C의 값이 클경우 에러를 줄이기 위해 노력하여 답이 나오지 않음

@@ -34,7 +34,6 @@
      - 1 - (p-value)
 
 - Publication bias
-
   - meta-analysis : 기존에 analysis(분석)했던 많은 결론들을 모아서 그것을 통계적으로 다시 analysis 하는 것
   - 빅데티어 시대에 들어서 어떤 alternative hypothesis가 true라는 결론이 많이 나오는데, 점점 과장이 심해지고 있다는 뜻
   - Type 1 에러가 점점 증가하게 됨
